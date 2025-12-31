@@ -1,0 +1,230 @@
+:root {
+  --green: #1f8f4a;
+  --black: #111;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--black);
+  line-height: 1.6;
+  background-color: #ffffff;
+  background-image: linear-gradient(#e6e6e6 1px, transparent 1px),
+    linear-gradient(90deg, #e6e6e6 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 50px 40px;
+
+  /* Semi-transparent white sheet */
+  background: rgba(255, 255, 255, 0.307);
+
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline; /* align text and logo on the same visual line */
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.brand img {
+  height: 50px; /* tweak until it visually matches text height */
+  width: auto;
+  object-fit: contain;
+  transform: translateY(10px); /* nudges logo down to align optically */
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--black);
+  margin: 40px 0;
+}
+
+/* Form */
+.form-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.form-intro {
+  margin-bottom: 24px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 14px;
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+.brand-text {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.op {
+  font-weight: 500;
+}
+
+.profit {
+  font-weight: 800;
+  letter-spacing: 0.18em; /* spaced letters */
+  margin-left: 10px;
+  color: #5ac81f;
+}
+
+@media (max-width: 600px) {
+  .brand-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 30px 15px;
+    padding: 30px 20px;
+  }
+}
+
+/* Prelaunch banner */
+.prelaunch {
+  background: rgba(31, 143, 74, 0.1);
+  color: #1f8f4a;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Info section */
+.info {
+  margin-top: 30px;
+}
+
+.info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.info p {
+  max-width: 600px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* Brand alignment improvement */
+.brand-text {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* Improve PROFIT spacing */
+.profit {
+  letter-spacing: 0.12em;
+}
+
+/* Softer paper look */
+.container {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Button polish */
+button {
+  background: linear-gradient(135deg, #1f8f4a, #176b38);
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(31, 143, 74, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(31, 143, 74, 0.4);
+}
